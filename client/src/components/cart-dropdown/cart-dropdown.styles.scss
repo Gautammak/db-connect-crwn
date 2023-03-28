@@ -1,0 +1,50 @@
+.cart-dropdown {
+  position: absolute;
+  width: 240px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  top: 90px;
+  right: 0px;
+  z-index: 5;
+
+  .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
+  }
+  .cart-items {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  button {
+    margin-top: auto;
+  }
+}
+// import React from "react";
+
+// import { connect } from "react-redux";
+// import CustomButton from "../custom-button/custom-button.component";
+// import CartItem from "../cart-item/cart-item.component";
+// import "./cart-dropdown.styles.scss";
+
+// const CartDropdown = ({ cartItems }) => (
+//   <div className="cart-dropdown">
+//     <div className="cart-item">
+//       {cartItems.map((cartItem) => (
+//         <CartItem key={cartItem.id} item={cartItem} />
+//       ))}
+//     </div>
+//     <CustomButton> GOTOCHECKOUT</CustomButton>
+//   </div>
+// );
+// const mapStateToProps = ({ cart: { cartItems } }) => ({
+//   cartItems,
+// });
+
+// export default connect(mapStateToProps)(CartDropdown);
